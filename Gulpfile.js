@@ -28,7 +28,7 @@ gulp.task('watch', function() {
     server: './'
   });
 
-	gulp.watch(['./sass/main.scss', './sass/**/*.scss'], ['sass']);
+	gulp.watch(['./sass/tempora.scss', './sass/**/*.scss'], ['sass']);
 	gulp.watch('./jade/*.jade', ['jade']);
   gulp.watch('./*.html').on('change', browserSync.reload);
 });
