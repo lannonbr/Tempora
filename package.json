@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "browser-sync": "^2.11.1",
+    "browser-sync": "^2.12.5",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.3",
-    "gulp-jade": "^1.1.0",
-    "gulp-load-plugins": "^1.2.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-pug": "^2.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.3.1",
+    "pug": "^2.0.0-alpha6"
   }
 }
