@@ -1,0 +1,26 @@
+nav {
+  background-color: darken(slategrey, 20%);
+  color: white;
+  display: block;
+  line-height: 50px;
+  min-height: 50px;
+  width: 100%;
+
+  &.nav-transparent {
+    background-color: inherit;
+  }
+
+  .nav-logo {
+    color: white;
+    font-family: 'Lobster';
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .nav-link {
+    color: white;
+    float: right;
+    margin-right: 20px;
+    opacity: .8;
+  }
+}
