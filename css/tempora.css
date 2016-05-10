@@ -54,6 +54,9 @@ body {
 main {
   clear: right;
   margin-top: 0;
+}
+
+.container {
   padding: 10px;
 }
 
@@ -163,4 +166,16 @@ header .nav-mobile ul li {
 
 footer .footer-social {
   font-size: 1.5em;
+}
+
+.hero {
+  background-image: url("../img/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 300px;
+  padding: 0;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
 }
