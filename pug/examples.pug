@@ -2,14 +2,33 @@ doctype
 html
   head
     title Tempora - Examples
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="css/tempora.css")
+    script(src="https://use.fontawesome.com/4da860b55e.js")
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous")
+    script(src="js/main.js")
   body
     header
-      h1 Tempora - Examples
+      a(href="./index.html").nav-logo Tempora
+      nav.nav-desktop
+        a(href="./gettingstarted.html").nav-link Getting Started
+        a(href="examples.html").nav-link Components
+        a(href="./about.html").nav-link About
+        a(href="./news.html").nav-link News
+        a(href="./download.html").nav-link Download
+      button(onclick="toggleMobileNav()"): i.fa.fa-bars
+      nav.nav-mobile
+        ul
+          li: a(href="./gettingstarted.html").nav-link Getting Started
+          li: a(href="examples.html").nav-link Components
+          li: a(href="./about.html").nav-link About
+          li: a(href="./news.html").nav-link News
+          li: a(href="./download.html").nav-link Download
     main
       p
         b Notice:
         | This is just going to be a long list of components that I am going to focus on when developing Tempora
+
       h5 Headers
       h1 Header 1
       h2 Header 2
@@ -17,41 +36,52 @@ html
       h4 Header 4
       h5 Header 5
       h6 Header 6
+
       h5 Plain input boxes
       input(placeholder="input box")
       input(disabled placeholder="disabled input box")
+
       h5 Buttons
       button button
       button(disabled) disabled button
+
       h5 Checkboxes
       input(type="checkbox" disabled)
       input(type="checkbox")
       input(type="checkbox" checked)
+
       h5 Radiobuttons
       input(type="radio" disabled)
       input(type="radio")
       input(type="radio" checked)
+
       h5 dropdown select list
       select
         option(value="1") Option 1
         option(value="2") Option 2
         option(value="3") Option 3
+
       h5 Ordered list
       ol
         li List item 1
         li List item 2
         li List item 3
+
       h5 Unordered list
       ul
         li List item 1
         li List item 2
         li List item 3
+
       h5 Horizontal rule
       hr
+
       h5 Blockquote
       blockquote "To be or not to be. That is the question."
+
       h5 progressbar
       progress(value="50" max="100")
+
       h5 Paragraph
       p.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis a nisl
@@ -61,6 +91,7 @@ html
         consequat lectus. Nam pretium lacinia venenatis. Proin scelerisque commodo cursus.
         Mauris urna enim, ullamcorper eget ultricies sed, pellentesque ac purus. Aenean ac
         facilisis orci. Duis tempus interdum purus vel eleifend.
+
       h5 Links
       a(href="") Go to this cool thing!
     footer

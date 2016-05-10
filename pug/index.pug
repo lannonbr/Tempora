@@ -2,20 +2,33 @@ doctype
 html
   head
     title Tempora
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="css/tempora.css")
-    link(rel="stylesheet" href="css/main.css")
+    //- link(rel="stylesheet" href="css/main.css")
     script(src='https://use.fontawesome.com/4da860b55e.js')
+    script(src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous")
+    script(src="js/main.js")
   body
-    nav
+    header
       a(href="./index.html").nav-logo Tempora
-      a(href="./download.html").nav-link Download
-      a(href="./news.html").nav-link News
-      a(href="./about.html").nav-link About
-      a(href="examples.html").nav-link Components
-      a(href="./gettingstarted.html").nav-link Getting Started
+      nav.nav-desktop
+        a(href="./gettingstarted.html").nav-link Getting Started
+        a(href="./examples.html").nav-link Components
+        a(href="./about.html").nav-link About
+        a(href="./news.html").nav-link News
+        a(href="./download.html").nav-link Download
+      button(onclick="toggleMobileNav()"): i.fa.fa-bars
+      nav.nav-mobile
+        ul
+          li: a(href="./gettingstarted.html").nav-link Getting Started
+          li: a(href="examples.html").nav-link Components
+          li: a(href="./about.html").nav-link About
+          li: a(href="./news.html").nav-link News
+          li: a(href="./download.html").nav-link Download
     main
-      p This is the main section
+      p This will be the main page
     footer
       p &copy; Copyright Benjamin Lannon 2016
       ul
-        i.fa.fa-github.footer-social: a(href="https://github.com/lannonbr/Tempora")
+        a(href="https://github.com/lannonbr/Tempora"): i.fa.fa-github.footer-social

@@ -30,14 +30,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -53,38 +45,40 @@ table {
   border-spacing: 0;
 }
 
-* {
+body {
   font-family: 'Open Sans';
   font-size: 16px;
+  text-rendering: optimizeLegibility;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: inline-block;
+main {
+  clear: right;
+  margin-top: 0;
+  padding: 10px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 a {
@@ -92,33 +86,81 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background-color: #434d57;
-  color: white;
-  display: block;
-  line-height: 50px;
-  min-height: 50px;
-  width: 100%;
+p {
+  line-height: 1.5;
 }
 
-nav.nav-transparent {
+ul li {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+ol li {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+header {
+  background-color: #434d57;
+  line-height: 50px;
+}
+
+header.transparent {
   background-color: inherit;
 }
 
-nav .nav-logo {
+header nav {
+  float: right;
+}
+
+header h1,
+header .nav-logo {
   color: white;
+  display: inline-block;
   font-family: 'Lobster';
   font-size: 25px;
   margin-left: 20px;
 }
 
-nav .nav-link {
+header .nav-link {
   color: white;
-  float: right;
+  font-family: 'Open Sans';
   margin-right: 20px;
   opacity: .8;
 }
 
+header button {
+  background: 0;
+  border: 0;
+  color: white;
+  display: none;
+  float: right;
+  font-size: 1.75em;
+  margin: 9px 10px;
+}
+
+@media (max-width: 750px) {
+  header button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header .nav-desktop {
+    display: none;
+  }
+}
+
+header .nav-mobile {
+  display: none;
+  float: none;
+  text-align: center;
+}
+
+header .nav-mobile ul li {
+  list-style-type: none;
+}
+
 footer .footer-social {
-  font-size: 36px;
+  font-size: 1.5em;
 }

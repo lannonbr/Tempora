@@ -2,18 +2,33 @@
 <html>
   <head>
     <title>Tempora</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tempora.css">
-    <link rel="stylesheet" href="css/main.css">
     <script src="https://use.fontawesome.com/4da860b55e.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <nav><a class="nav-logo" href="./index.html">Tempora</a><a class="nav-link" href="./download.html">Download</a><a class="nav-link" href="./news.html">News</a><a class="nav-link" href="./about.html">About</a><a class="nav-link" href="examples.html">Components</a><a class="nav-link" href="./gettingstarted.html">Getting Started</a></nav>
+    <header><a class="nav-logo" href="./index.html">Tempora</a>
+      <nav class="nav-desktop"><a class="nav-link" href="./gettingstarted.html">Getting Started</a><a class="nav-link" href="./examples.html">Components</a><a class="nav-link" href="./about.html">About</a><a class="nav-link" href="./news.html">News</a><a class="nav-link" href="./download.html">Download</a></nav>
+      <button onclick="toggleMobileNav()"><i class="fa fa-bars"></i></button>
+      <nav class="nav-mobile">
+        <ul>
+          <li><a class="nav-link" href="./gettingstarted.html">Getting Started</a></li>
+          <li><a class="nav-link" href="examples.html">Components</a></li>
+          <li><a class="nav-link" href="./about.html">About</a></li>
+          <li><a class="nav-link" href="./news.html">News</a></li>
+          <li><a class="nav-link" href="./download.html">Download</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <p>This is the main section</p>
+      <p>This will be the main page</p>
     </main>
     <footer>
       <p>&copy; Copyright Benjamin Lannon 2016</p>
-      <ul><i class="fa fa-github footer-social"><a href="https://github.com/lannonbr/Tempora"></a></i></ul>
+      <ul><a href="https://github.com/lannonbr/Tempora"><i class="fa fa-github footer-social"></i></a></ul>
     </footer>
   </body>
 </html>

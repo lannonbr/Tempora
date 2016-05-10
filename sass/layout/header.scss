@@ -1,17 +1,19 @@
-nav {
+header {
   background-color: darken(slategrey, 20%);
-  color: white;
-  display: block;
   line-height: 50px;
-  min-height: 50px;
-  width: 100%;
 
-  &.nav-transparent {
+  &.transparent {
     background-color: inherit;
   }
 
+  nav {
+    float: right;
+  }
+
+  h1,
   .nav-logo {
     color: white;
+    display: inline-block;
     font-family: 'Lobster';
     font-size: 25px;
     margin-left: 20px;
@@ -19,8 +21,38 @@ nav {
 
   .nav-link {
     color: white;
-    float: right;
+    font-family: 'Open Sans';
     margin-right: 20px;
     opacity: .8;
+  }
+
+  button {
+    background: 0;
+    border: 0;
+    color: white;
+    display: none;
+    float: right;
+    font-size: 1.75em;
+    margin: 9px 10px;
+
+    @media(max-width: 750px) {
+      display: block;
+    }
+  }
+
+  .nav-desktop {
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .nav-mobile {
+    display: none;
+    float: none;
+    text-align: center;
+
+    ul li {
+      list-style-type: none;
+    }
   }
 }
