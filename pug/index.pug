@@ -10,27 +10,9 @@ html
     script(src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous")
     script(src="js/main.js")
   body
-    header
-      a(href="./index.html").nav-logo Tempora
-      nav.nav-desktop
-        a(href="./gettingstarted.html").nav-link Getting Started
-        a(href="./examples.html").nav-link Components
-        a(href="./about.html").nav-link About
-        a(href="./news.html").nav-link News
-        a(href="./download.html").nav-link Download
-      button(onclick="toggleMobileNav()"): i.fa.fa-bars
-      nav.nav-mobile
-        ul
-          li: a(href="./gettingstarted.html").nav-link Getting Started
-          li: a(href="examples.html").nav-link Components
-          li: a(href="./about.html").nav-link About
-          li: a(href="./news.html").nav-link News
-          li: a(href="./download.html").nav-link Download
+    include ./partials/header.pug
     main
       .hero
         h1 Tempora
         h3 A CSS Framework to focus on content
-    footer
-      p &copy; Copyright Benjamin Lannon 2016
-      ul
-        a(href="https://github.com/lannonbr/Tempora"): i.fa.fa-github.footer-social
+    include ./partials/footer.pug

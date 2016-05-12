@@ -1,6 +1,34 @@
 footer {
 
-  .footer-social {
-    font-size: 1.5em;
+  background-color: darken(slategrey, 20%);
+  color: white;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 25px;
+
+  ul {
+    text-align: center;
   }
+
+  ul li {
+    display: inline;
+    list-style-type: none;
+    padding-bottom: 10px;
+
+    a {
+      color: white;
+      opacity: .9;
+    }
+  }
+
+  .footer-social {
+    font-size: 1.25em;
+    padding: 0 10px;
+  }
+}
+
+.footer-copy {
+  background-color: darken(slategrey, 30%);
+  color: white;
+  padding: 10px 20px;
 }

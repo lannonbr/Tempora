@@ -164,8 +164,38 @@ header .nav-mobile ul li {
   list-style-type: none;
 }
 
+footer {
+  background-color: #434d57;
+  color: white;
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  opacity: .9;
+}
+
 footer .footer-social {
-  font-size: 1.5em;
+  font-size: 1.25em;
+  padding: 0 10px;
+}
+
+.footer-copy {
+  background-color: #2d343a;
+  color: white;
+  padding: 10px 20px;
 }
 
 .hero {
